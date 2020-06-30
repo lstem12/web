@@ -7,10 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-번호 : <input type="number" id="num"><br>
-이름 : <input type="text" id="name"><br>
-아이디 : <input type="text" id="id"><br>
-<button onclick="userInsert()">입력</button>
+<form action="/web/user/user-insert-ok.jsp">
+이름 : <input type="text" id="name" name="name"><br>
+아이디 : <input type="text" id="id" name="id"><br>
+<button>입력</button>
+</form>
+
 <script>
 	function userInsert(){
 		var num = document.getElementById('num').value;
